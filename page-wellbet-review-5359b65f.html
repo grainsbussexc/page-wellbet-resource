@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吉祥坊 · 平台向导</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #faf7f2;
+      font-family: 'Georgia', 'Times New Roman', '宋体', 'SimSun', serif;
+      color: #2f2f2f;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #fefcf8;
+      padding: 2.4rem 2.2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 0.25rem;
+      color: #3b2e26;
+      border-left: 6px solid #c3a88a;
+      padding-left: 1rem;
+    }
+
+    .subhead {
+      font-size: 0.95rem;
+      color: #7b6e62;
+      margin-bottom: 2.2rem;
+      padding-left: 1.6rem;
+      border-bottom: 1px solid #ece3d9;
+      padding-bottom: 0.8rem;
+    }
+
+    .intro-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+
+    .card {
+      background: #f8f4ee;
+      padding: 1.4rem 1.8rem;
+      border-radius: 14px;
+      border-left: 4px solid #d6c0ab;
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #4a3b31;
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .card p {
+      font-size: 0.97rem;
+      color: #3f362e;
+    }
+
+    .info-box {
+      background: #f0e9e1;
+      border: 1px solid #dfd3c6;
+      border-radius: 14px;
+      padding: 1.2rem 1.6rem;
+      margin: 1.8rem 0;
+      font-size: 0.95rem;
+      color: #3f362e;
+    }
+
+    .info-box strong {
+      color: #4f3c2b;
+    }
+
+    .snippet {
+      background: #fff9f2;
+      border: 1px dashed #cdb9a5;
+      border-radius: 12px;
+      padding: 0.9rem 1.4rem;
+      margin: 1.2rem 0;
+      font-style: normal;
+      color: #463b32;
+    }
+
+    .snippet::before {
+      content: "📋 提示 ";
+      font-weight: 500;
+      color: #9b7f66;
+      margin-right: 0.4rem;
+    }
+
+    .link-sentence {
+      margin: 1.4rem 0 1rem 0;
+      font-size: 1rem;
+      background: #f6efe8;
+      padding: 0.8rem 1.4rem;
+      border-radius: 40px;
+      display: inline-block;
+    }
+
+    .link-sentence a {
+      color: #7a5d44;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 2px solid #d9c3b0;
+      transition: border-color 0.2s;
+    }
+
+    .link-sentence a:hover {
+      border-bottom-color: #a48468;
+    }
+
+    .faq-summary {
+      margin-top: 2rem;
+    }
+
+    .faq-item {
+      padding: 0.7rem 0;
+      border-bottom: 1px solid #e5dbd0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-q {
+      font-weight: 500;
+      color: #5a4a3c;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-a {
+      font-size: 0.93rem;
+      color: #5f5348;
+      padding-left: 0.6rem;
+    }
+
+    .scene-note {
+      margin: 1.2rem 0;
+      padding: 0.8rem 1.2rem;
+      background: #f2ebe2;
+      border-radius: 12px;
+      font-size: 0.92rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e3d7cb;
+      margin: 1.8rem 0;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 0.88rem;
+      color: #94887c;
+      margin-top: 2.2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ece3d9;
+    }
+
+    @media (max-width: 540px) {
+      .page {
+        padding: 1.5rem 1rem;
+      }
+      h1 {
+        font-size: 1.6rem;
+        padding-left: 0.8rem;
+      }
+      .card {
+        padding: 1rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>吉祥坊</h1>
+    <div class="subhead">一个对你或许有用的页面 · 目录式速览</div>
+
+    <div class="intro-grid">
+
+      <div class="card">
+        <h2>📌 本篇用意</h2>
+        <p>当用户打开一个链接却不确定它通往何处时，往往需要一点指引。下面几段内容从不同侧面说明 <strong>吉祥坊</strong> 的常见用途，方便你快速判断它是否契合自己的需求。</p>
+      </div>
+
+      <div class="card">
+        <h2>🧭 用途速览</h2>
+        <p>很多人在寻找一个能聚合信息、提供休闲指引的平台时，会想到 <a href="https://page-wellbet.com" style="color:#7a5d44; text-decoration: underline; text-underline-offset: 3px;">吉祥坊</a>。它并不复杂，更像是一个带有索引性质的页面，把不同板块串联起来，方便浏览者按图索骥。</p>
+      </div>
+
+      <div class="info-box">
+        <strong>▸ 使用场景举例</strong><br>
+        一位用户想了解某个主题下的常见选项，或者想快速浏览分类内容，就可以通过这个站点获得一个入口式的总览。它不替代深度内容，而是帮你节省查找时间。
+      </div>
+
+      <div class="snippet">
+        若你习惯先看目录再看细节，那么 <strong>吉祥坊</strong> 的结构可能会让你感到顺手。整个页面偏向于“书架索引”的体验——先看到标题与摘要，再决定是否深入。
+      </div>
+
+      <div class="card">
+        <h2>📎 相关信息</h2>
+        <p>站点本身不算臃肿，配色和排版以信息清晰为主。没有过多装饰，重点放在“快速定位”上。如果你偏爱干净、无干扰的浏览环境，这里的布局会比较舒服。</p>
+      </div>
+
+      <div class="scene-note">
+        ⚡ 实际使用中，有人把它当作“中转页”——先在这里看清分类，再顺着链接去具体部分。也有人直接把它加入书签，作为日常的参考起点。
+      </div>
+
+      <div class="faq-summary">
+        <div class="faq-item">
+          <div class="faq-q">❓ 这个页面适合第一次来的人吗？</div>
+          <div class="faq-a">是的，它本身就是为了让新访客快速理解平台覆盖哪些方向而设计的，目录式布局降低了摸索成本。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">❓ 我能否依赖它找到所有内容？</div>
+          <div class="faq-a">它更像一张地图，而不是内容全集。具体条目需要你根据指引进一步浏览，但方向已经标好了。</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div style="font-size:0.95rem; color:#4f443b; padding: 0.6rem 0;">
+        从用户角度看，<a href="https://page-wellbet.com" style="color:#7a5d44; text-decoration: none; border-bottom: 2px solid #d9c3b0; font-weight:500;">吉祥坊</a> 的定位是「信息集合 + 快速导航」。没有夸张的承诺，也没有复杂的交互，就是一个普通但清晰的索引入口。
+      </div>
+
+    </div>
+
+    <div class="footer-note">
+      页面仅供参考 · 内容基于常见使用场景描述 · 无诱导意图
+    </div>
+  </div>
+</body>
+</html>
