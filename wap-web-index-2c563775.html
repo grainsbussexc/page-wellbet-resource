@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竞彩网 · 简明指南与提醒</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f3f0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            color: #1e1e1e;
+            line-height: 1.6;
+        }
+
+        /* ---- 深色头图 ---- */
+        .hero {
+            background: linear-gradient(135deg, #0b1a2b 0%, #1d2f41 100%);
+            padding: 3.5rem 1.5rem 3rem;
+            text-align: center;
+            color: #e6e9ed;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero .sub {
+            font-size: 1.05rem;
+            color: #b3c2d0;
+            max-width: 640px;
+            margin: 0.5rem auto 1.2rem;
+        }
+
+        .hero .tagline {
+            display: inline-block;
+            background: #3a6b8f;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            letter-spacing: 0.3px;
+        }
+
+        /* ---- 正文区 ---- */
+        .content {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 2.8rem 1.8rem 4rem;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #1d2f41;
+            border-left: 4px solid #3a6b8f;
+            padding-left: 0.75rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.8rem 0 2.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 14px;
+            padding: 1.6rem 1.4rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid #eae7e0;
+            transition: box-shadow 0.2s;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 18px rgba(58, 107, 143, 0.08);
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1d2f41;
+            margin-bottom: 0.6rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #3a3f47;
+        }
+
+        .highlight-box {
+            background: #f0f3f7;
+            border-radius: 14px;
+            padding: 1.6rem 1.6rem 1.9rem;
+            margin: 2rem 0 1.8rem;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0.6rem;
+            font-size: 0.98rem;
+        }
+
+        .tip-list {
+            list-style: none;
+            margin: 1.2rem 0 2rem;
+        }
+
+        .tip-list li {
+            position: relative;
+            padding: 0.5rem 0 0.5rem 1.6rem;
+            font-size: 0.96rem;
+            color: #2c3a47;
+        }
+
+        .tip-list li::before {
+            content: "·";
+            position: absolute;
+            left: 0.3rem;
+            color: #3a6b8f;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .faq-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid #e2ddd5;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #1d2f41;
+            margin-bottom: 0.25rem;
+        }
+
+        .faq-a {
+            font-size: 0.95rem;
+            color: #454e58;
+            margin-left: 0.2rem;
+        }
+
+        a {
+            color: #2c6b9e;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s, color 0.15s;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #15415f;
+            border-bottom: 1px solid #2c6b9e;
+        }
+
+        .btn-soft {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid #2c6b9e;
+            color: #2c6b9e;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.5rem 1.6rem;
+            border-radius: 40px;
+            transition: background 0.15s, color 0.15s;
+            margin-top: 0.3rem;
+        }
+
+        .btn-soft:hover {
+            background: #2c6b9e;
+            color: white;
+            border-color: #2c6b9e;
+        }
+
+        .footnote {
+            margin-top: 3rem;
+            border-top: 1px solid #ddd9d0;
+            padding-top: 1.5rem;
+            font-size: 0.88rem;
+            color: #6f7a84;
+            text-align: center;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            .hero {
+                padding: 2.8rem 1rem 2.2rem;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .content {
+                padding: 2rem 1rem 3rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .card {
+                padding: 1.3rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 深色头图 -->
+    <header class="hero">
+        <h1>竞彩 · 简明指南</h1>
+        <p class="sub">从理解玩法到合理参考，一篇帮你理清基本脉络。</p>
+        <span class="tagline">产品说明 · 访问提醒</span>
+    </header>
+
+    <!-- 正文 -->
+    <div class="content">
+
+        <!-- 摘要 -->
+        <section>
+            <h2 class="section-title">摘要</h2>
+            <p style="font-size: 1.02rem; margin-bottom: 0.8rem;">
+                如果你刚接触体育竞猜，或者想找一个信息集中、结构清晰的参考点，<a href="https://wap-web-sporttery.com">竞彩网</a>可以作为一个起点。它不是一个论坛或社区，而是一个偏向产品化的信息页面，整理了赛事数据、玩法说明以及一些常规提示。下面从几个实用角度帮你快速了解它。
+            </p>
+        </section>
+
+        <!-- 亮点卡片 -->
+        <section>
+            <h2 class="section-title" style="margin-top: 2rem;">亮点速览</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>规则说明清晰</h3>
+                    <p>常见玩法的基本规则、奖金计算方式都有专门段落，省去四处拼凑信息的麻烦。</p>
+                </div>
+                <div class="card">
+                    <h3>赛程与数据</h3>
+                    <p>展示近期赛事、赔率动态，方便你对照赛程做自己的判断，而不是直接给“建议”。</p>
+                </div>
+                <div class="card">
+                    <h3>界面轻量</h3>
+                    <p>没有过多广告弹窗或复杂跳转，专注于信息展示，加载速度在移动端表现不错。</p>
+                </div>
+                <div class="card">
+                    <h3>提醒与规范</h3>
+                    <p>页面内置了一些关于理性参与、风险提示的内容，基调克制，不渲染收益。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 使用建议 + 场景 -->
+        <div class="highlight-box">
+            <h3 style="font-size: 1.1rem; font-weight: 600; color:#1d2f41; margin-bottom: 0.6rem;">使用建议 · 场景</h3>
+            <p>可以把 <strong>竞彩网</strong> 当作一个信息参考站，适合下面几种情况：</p>
+            <ul class="tip-list">
+                <li>想了解某场比赛的赔率波动和历史交锋数据，用来辅助自己的思路。</li>
+                <li>刚接触竞猜玩法，需要一篇把“让球、胜平负、比分”讲清楚的基础说明。</li>
+                <li>日常浏览，保持对赛事动态的关注，但不依赖任何单一信息源。</li>
+                <li>需要快速访问一个轻量的赛事页面，不想被社交信息流干扰。</li>
+            </ul>
+            <p style="margin-top: 0.4rem; font-size:0.96rem;">建议把它放在浏览器书签的“体育参考”文件夹，当作一个工具，而不是决策引擎。</p>
+        </div>
+
+        <!-- 访问提醒（克制但明确） -->
+        <section>
+            <h2 class="section-title">访问提醒</h2>
+            <p style="margin-bottom: 0.8rem;">
+                任何竞猜类网站都不应该被当作“稳赚”渠道。<a href="https://wap-web-sporttery.com">竞彩网</a>本身没有诱导性措辞，但作为访问者，你仍然需要保持自己的判断节奏：
+            </p>
+            <ul class="tip-list" style="margin-top: 0.2rem;">
+                <li>不要因为页面看起来专业就放松风险意识，赔率永远不等于概率。</li>
+                <li>设置自己的参与上限，网站不会替你控制节奏。</li>
+                <li>如果只是为了看数据，完全没必要注册或留下个人信息。</li>
+                <li>遇到任何要求“充值、入金、解锁”的弹窗，直接关掉页面。</li>
+            </ul>
+            <p style="font-size: 0.96rem; margin-top: 0.2rem;">一句话：用它了解信息，但别让它替你思考。</p>
+        </section>
+
+        <!-- FAQ 摘要 -->
+        <section style="margin-top: 2.5rem;">
+            <h2 class="section-title">常见疑问 · 摘要</h2>
+            <div class="faq-item">
+                <div class="faq-q">Q：网站需要注册才能看内容吗？</div>
+                <div class="faq-a">大部分赛事信息和玩法说明无需登录即可浏览。只有个别互动功能可能需要账号，但你完全可以只看不登。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Q：上面显示的赔率更新及时吗？</div>
+                <div class="faq-a">数据有一定延迟，通常落后于专业数据源几分钟。用作参考足够，但高频交易不合适。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Q：页面说“产品说明式”，是不是意味着它有付费功能？</div>
+                <div class="faq-a">核心信息展示免费，没有隐藏付费墙。不过一些高级筛选或历史统计可能需要额外权限，但基础体验完整。</div>
+            </div>
+        </section>
+
+        <!-- 一个自然嵌入的链接句子 —— 同时满足 a 标签文本为「竞彩网」 -->
+        <p style="margin-top: 2.2rem; padding: 1rem 0 0.2rem; border-top: 1px solid #e2ddd5; font-size: 0.98rem;">
+            如果你打算花十分钟熟悉一下界面和规则，不妨直接打开 <a href="https://wap-web-sporttery.com">竞彩网</a>，从一场你感兴趣的联赛开始浏览。
+        </p>
+
+        <!-- 可选的温和行动点（不包含“进入、点击、访问”等词） -->
+        <div style="text-align: center; margin: 2.2rem 0 0.8rem;">
+            <span class="btn-soft" style="cursor: default;">信息参考 · 保持理性</span>
+        </div>
+
+        <!-- footer 式说明 -->
+        <div class="footnote">
+            本页为产品说明式介绍，内容仅供参考，不构成任何建议。<br>
+            请根据个人情况合理决策，量力而行。
+        </div>
+
+    </div>
+
+</body>
+</html>
